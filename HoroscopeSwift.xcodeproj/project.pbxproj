@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183271582240090500776B13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183271572240090500776B13 /* AppDelegate.swift */; };
+		1832715A2240090500776B13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183271592240090500776B13 /* ViewController.swift */; };
+		1832715D2240090500776B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1832715B2240090500776B13 /* Main.storyboard */; };
+		1832715F2240090600776B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1832715E2240090600776B13 /* Assets.xcassets */; };
+		183271622240090600776B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183271602240090600776B13 /* LaunchScreen.storyboard */; };
+		183271672240090700776B13 /* HoroscopeSwift WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 183271662240090700776B13 /* HoroscopeSwift WatchKit App.app */; };
+		1832716D2240090700776B13 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1832716B2240090700776B13 /* Interface.storyboard */; };
+		1832716F2240090700776B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1832716E2240090700776B13 /* Assets.xcassets */; };
+		183271762240090700776B13 /* HoroscopeSwift WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 183271752240090700776B13 /* HoroscopeSwift WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1832717B2240090700776B13 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832717A2240090700776B13 /* InterfaceController.swift */; };
+		1832717D2240090700776B13 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832717C2240090700776B13 /* ExtensionDelegate.swift */; };
+		1832717F2240090800776B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1832717E2240090800776B13 /* Assets.xcassets */; };
+		1832718F22400A7100776B13 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832718E22400A7100776B13 /* Row.swift */; };
+		1832719122400EE800776B13 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832719022400EE800776B13 /* ResultsController.swift */; };
+		18327193224019B500776B13 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18327192224019B500776B13 /* Horoscope.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		183271682240090700776B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1832714C2240090500776B13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 183271652240090700776B13;
+			remoteInfo = "HoroscopeSwift WatchKit App";
+		};
+		183271772240090700776B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1832714C2240090500776B13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 183271742240090700776B13;
+			remoteInfo = "HoroscopeSwift WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		183271862240090800776B13 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				183271762240090700776B13 /* HoroscopeSwift WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1832718A2240090800776B13 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				183271672240090700776B13 /* HoroscopeSwift WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		183271542240090500776B13 /* HoroscopeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoroscopeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		183271572240090500776B13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		183271592240090500776B13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1832715C2240090500776B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1832715E2240090600776B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183271612240090600776B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		183271632240090600776B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183271662240090700776B13 /* HoroscopeSwift WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HoroscopeSwift WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1832716C2240090700776B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1832716E2240090700776B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183271702240090700776B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183271752240090700776B13 /* HoroscopeSwift WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HoroscopeSwift WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1832717A2240090700776B13 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1832717C2240090700776B13 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1832717E2240090800776B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183271802240090800776B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1832718E22400A7100776B13 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		1832719022400EE800776B13 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
+		18327192224019B500776B13 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183271512240090500776B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183271722240090700776B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1832714B2240090500776B13 = {
+			isa = PBXGroup;
+			children = (
+				183271562240090500776B13 /* HoroscopeSwift */,
+				1832716A2240090700776B13 /* HoroscopeSwift WatchKit App */,
+				183271792240090700776B13 /* HoroscopeSwift WatchKit Extension */,
+				183271552240090500776B13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		183271552240090500776B13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183271542240090500776B13 /* HoroscopeSwift.app */,
+				183271662240090700776B13 /* HoroscopeSwift WatchKit App.app */,
+				183271752240090700776B13 /* HoroscopeSwift WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183271562240090500776B13 /* HoroscopeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				183271572240090500776B13 /* AppDelegate.swift */,
+				183271592240090500776B13 /* ViewController.swift */,
+				1832715B2240090500776B13 /* Main.storyboard */,
+				1832715E2240090600776B13 /* Assets.xcassets */,
+				183271602240090600776B13 /* LaunchScreen.storyboard */,
+				183271632240090600776B13 /* Info.plist */,
+			);
+			path = HoroscopeSwift;
+			sourceTree = "<group>";
+		};
+		1832716A2240090700776B13 /* HoroscopeSwift WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1832716B2240090700776B13 /* Interface.storyboard */,
+				1832716E2240090700776B13 /* Assets.xcassets */,
+				183271702240090700776B13 /* Info.plist */,
+			);
+			path = "HoroscopeSwift WatchKit App";
+			sourceTree = "<group>";
+		};
+		183271792240090700776B13 /* HoroscopeSwift WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1832717A2240090700776B13 /* InterfaceController.swift */,
+				1832717C2240090700776B13 /* ExtensionDelegate.swift */,
+				1832717E2240090800776B13 /* Assets.xcassets */,
+				183271802240090800776B13 /* Info.plist */,
+				1832718E22400A7100776B13 /* Row.swift */,
+				1832719022400EE800776B13 /* ResultsController.swift */,
+				18327192224019B500776B13 /* Horoscope.swift */,
+			);
+			path = "HoroscopeSwift WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183271532240090500776B13 /* HoroscopeSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1832718B2240090800776B13 /* Build configuration list for PBXNativeTarget "HoroscopeSwift" */;
+			buildPhases = (
+				183271502240090500776B13 /* Sources */,
+				183271512240090500776B13 /* Frameworks */,
+				183271522240090500776B13 /* Resources */,
+				1832718A2240090800776B13 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				183271692240090700776B13 /* PBXTargetDependency */,
+			);
+			name = HoroscopeSwift;
+			productName = HoroscopeSwift;
+			productReference = 183271542240090500776B13 /* HoroscopeSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		183271652240090700776B13 /* HoroscopeSwift WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183271872240090800776B13 /* Build configuration list for PBXNativeTarget "HoroscopeSwift WatchKit App" */;
+			buildPhases = (
+				183271642240090700776B13 /* Resources */,
+				183271862240090800776B13 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				183271782240090700776B13 /* PBXTargetDependency */,
+			);
+			name = "HoroscopeSwift WatchKit App";
+			productName = "HoroscopeSwift WatchKit App";
+			productReference = 183271662240090700776B13 /* HoroscopeSwift WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		183271742240090700776B13 /* HoroscopeSwift WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183271832240090800776B13 /* Build configuration list for PBXNativeTarget "HoroscopeSwift WatchKit Extension" */;
+			buildPhases = (
+				183271712240090700776B13 /* Sources */,
+				183271722240090700776B13 /* Frameworks */,
+				183271732240090700776B13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HoroscopeSwift WatchKit Extension";
+			productName = "HoroscopeSwift WatchKit Extension";
+			productReference = 183271752240090700776B13 /* HoroscopeSwift WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1832714C2240090500776B13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Andres Lopez";
+				TargetAttributes = {
+					183271532240090500776B13 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					183271652240090700776B13 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					183271742240090700776B13 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 1832714F2240090500776B13 /* Build configuration list for PBXProject "HoroscopeSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1832714B2240090500776B13;
+			productRefGroup = 183271552240090500776B13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183271532240090500776B13 /* HoroscopeSwift */,
+				183271652240090700776B13 /* HoroscopeSwift WatchKit App */,
+				183271742240090700776B13 /* HoroscopeSwift WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183271522240090500776B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183271622240090600776B13 /* LaunchScreen.storyboard in Resources */,
+				1832715F2240090600776B13 /* Assets.xcassets in Resources */,
+				1832715D2240090500776B13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183271642240090700776B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1832716F2240090700776B13 /* Assets.xcassets in Resources */,
+				1832716D2240090700776B13 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183271732240090700776B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1832717F2240090800776B13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183271502240090500776B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1832715A2240090500776B13 /* ViewController.swift in Sources */,
+				183271582240090500776B13 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183271712240090700776B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1832719122400EE800776B13 /* ResultsController.swift in Sources */,
+				1832717D2240090700776B13 /* ExtensionDelegate.swift in Sources */,
+				1832718F22400A7100776B13 /* Row.swift in Sources */,
+				18327193224019B500776B13 /* Horoscope.swift in Sources */,
+				1832717B2240090700776B13 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		183271692240090700776B13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 183271652240090700776B13 /* HoroscopeSwift WatchKit App */;
+			targetProxy = 183271682240090700776B13 /* PBXContainerItemProxy */;
+		};
+		183271782240090700776B13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 183271742240090700776B13 /* HoroscopeSwift WatchKit Extension */;
+			targetProxy = 183271772240090700776B13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1832715B2240090500776B13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1832715C2240090500776B13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		183271602240090600776B13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183271612240090600776B13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1832716B2240090700776B13 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1832716C2240090700776B13 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		183271812240090800776B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		183271822240090800776B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		183271842240090800776B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95QWWBBN93;
+				INFOPLIST_FILE = "HoroscopeSwift WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kal.HoroscopeSwift.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		183271852240090800776B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95QWWBBN93;
+				INFOPLIST_FILE = "HoroscopeSwift WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kal.HoroscopeSwift.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		183271882240090800776B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95QWWBBN93;
+				IBSC_MODULE = HoroscopeSwift_WatchKit_Extension;
+				INFOPLIST_FILE = "HoroscopeSwift WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kal.HoroscopeSwift.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		183271892240090800776B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95QWWBBN93;
+				IBSC_MODULE = HoroscopeSwift_WatchKit_Extension;
+				INFOPLIST_FILE = "HoroscopeSwift WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kal.HoroscopeSwift.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		1832718C2240090800776B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95QWWBBN93;
+				INFOPLIST_FILE = HoroscopeSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kal.HoroscopeSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1832718D2240090800776B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95QWWBBN93;
+				INFOPLIST_FILE = HoroscopeSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kal.HoroscopeSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1832714F2240090500776B13 /* Build configuration list for PBXProject "HoroscopeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183271812240090800776B13 /* Debug */,
+				183271822240090800776B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183271832240090800776B13 /* Build configuration list for PBXNativeTarget "HoroscopeSwift WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183271842240090800776B13 /* Debug */,
+				183271852240090800776B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183271872240090800776B13 /* Build configuration list for PBXNativeTarget "HoroscopeSwift WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183271882240090800776B13 /* Debug */,
+				183271892240090800776B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1832718B2240090800776B13 /* Build configuration list for PBXNativeTarget "HoroscopeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1832718C2240090800776B13 /* Debug */,
+				1832718D2240090800776B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1832714C2240090500776B13 /* Project object */;
+}

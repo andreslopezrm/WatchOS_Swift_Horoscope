@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HoroscopeSwift_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="IQB-4G-XzM">
+                            <items>
+                                <tableRow identifier="Row" id="hlc-W4-8aS" customClass="Row" customModule="HoroscopeSwift_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="i0R-sj-E2s">
+                                        <items>
+                                            <label width="0.20000000000000001" height="1" alignment="left" id="9RH-F2-jbn"/>
+                                            <label width="0.80000000000000004" height="1" alignment="left" id="bP9-oV-uVs"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblIcon" destination="9RH-F2-jbn" id="vLa-2L-5jN"/>
+                                        <outlet property="lblZodiac" destination="bP9-oV-uVs" id="bhh-Mz-HyV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="IQB-4G-XzM" id="hpu-zi-lyX"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Results-->
+        <scene sceneID="FHw-iW-dIg">
+            <objects>
+                <controller identifier="Results" id="tDU-12-j7c" customClass="ResultsController" customModule="HoroscopeSwift_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Sing" textAlignment="center" id="7wn-Ht-czf">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <label width="1" alignment="left" text="Loading ..." textAlignment="center" id="zvk-Te-oXu"/>
+                        <label width="1" height="1" alignment="left" numberOfLines="0" minimumScaleFactor="0.40000000000000002" id="Tqj-gQ-B3a">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="lblDate" destination="zvk-Te-oXu" id="dZ7-zI-QaZ"/>
+                        <outlet property="lblDescription" destination="Tqj-gQ-B3a" id="1NG-H0-16G"/>
+                        <outlet property="lblSing" destination="7wn-Ht-czf" id="h80-B3-Ns8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="317" y="31"/>
+        </scene>
+    </scenes>
+</document>
